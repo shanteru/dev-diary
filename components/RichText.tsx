@@ -1,5 +1,6 @@
 import { TinaMarkdown } from "tinacms/dist/rich-text"
 import dynamic from "next/dynamic"
+import Image from "next/image"
 
 export const TextBox = (props: any) => {
   return (
@@ -35,7 +36,7 @@ export const VideoPlayer = (props: any) => {
 export const CaptionedImage = (props: any) => {
   return (
     <figure className="flex flex-col items-center justify-center py-6 md:ml-[-50px] md:min-w-[calc(100%+100px)] lg:ml-[-130px] xl:min-w-[calc(100%+260px)]">
-      <img style={{ maxWidth: "100%" }} src={props.imgUrl} alt={props.alt} />
+      <Image style={{ maxWidth: "100%" }} src={props.imgUrl} alt={props.alt} />
       <figcaption className="text-[,8em]">{props.caption}</figcaption>
     </figure>
   )
