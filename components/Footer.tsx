@@ -7,9 +7,8 @@ export default function Footer(){
             <hr />
             <p>
                 <Link href="https://shanteru.vercel.app" target="_blank" className="underline-offset-2 hover:text-indigo-300 hover:underline">
-                    chantelle's 
+                &#169;2024 Chantelle Loh
                 </Link> {" "}
-                dev diary
             </p>
         </div>
     )
