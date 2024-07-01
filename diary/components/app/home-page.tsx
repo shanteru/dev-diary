@@ -5,6 +5,7 @@ import Link from "next/link"
 import { tinaField, useTina } from "tinacms/dist/react"
 import { TinaMarkdown } from "tinacms/dist/rich-text"
 import moment from "moment"
+import { CaptionedImage, PullQuote, TextBox, VideoPlayer } from "../RichText"
 
 export function HomePageComponent(props: {
   data: HomePageQuery
@@ -23,7 +24,7 @@ export function HomePageComponent(props: {
       <article>
         <h1 data-tina-field={tinaField(data.page, "title")}>{title}</h1>
         <section data-tina-field={tinaField(data.page, "body")}>
-          <TinaMarkdown content={content} />
+        <TinaMarkdown components={{TextBox, PullQuote,VideoPlayer, CaptionedImage}} content={content}/>
         </section>
       </article>
       {postList&& postList.length>0 && (
