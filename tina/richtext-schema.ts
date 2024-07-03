@@ -37,6 +37,16 @@ export const richTextComponents: Template[] = [
         label: "Image alt text",
         type: "string",
       },
+      {
+        name: "imgWidth",
+        label: "Image Width",
+        type: "number",
+      },
+      {
+        name: "imgHeight",
+        label: "Image Height",
+        type: "number",
+      },
     ],
   },
   {

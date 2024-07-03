@@ -36,7 +36,8 @@ export const VideoPlayer = (props: any) => {
 export const CaptionedImage = (props: any) => {
   return (
     <figure className="flex flex-col items-center justify-center py-6 md:ml-[-50px] md:min-w-[calc(100%+100px)] lg:ml-[-130px] xl:min-w-[calc(100%+260px)]">
-      <Image style={{ maxWidth: "100%" }} src={props.imgUrl} alt={props.alt} />
+      <Image style={{ maxWidth: "100%" }}  width={props.imgWidth} height={props.imgHeight}
+    layout="responsive" src={props.imgUrl} alt={props.alt} />
       <figcaption className="text-[,8em]">{props.caption}</figcaption>
     </figure>
   )
