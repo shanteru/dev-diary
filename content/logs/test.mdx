@@ -15,15 +15,19 @@ Apache Kafka operates on a distributed architecture consisting primarily of brok
 3. **Consumers:** Applications that subscribe to and process data from Kafka topics.
 4. **ZooKeeper:** Coordinates and manages Kafka brokers to ensure reliability and scalability.
 
-**Suitability and Unique Features:**
-Apache Kafka stands out as a robust solution for real-time streaming and data integration across various systems. Its design supports:
+**As far as I am aware..**
+Apache Kafka has some unique features
 
 * **Scalability:** Kafka's distributed nature allows horizontal scaling, accommodating increasing data volumes seamlessly.
 * **Fault Tolerance:** Replication across Kafka brokers ensures data durability and availability, critical for mission-critical applications.
-* **High Throughput:** Kafka's ability to handle millions of messages per second makes it ideal for scenarios requiring real-time data processing.
+* **High Throughput aka "Fast":** Kafka's ability to handle millions of messages per second makes it ideal for scenarios requiring real-time data processing.
 * **Data Integration:** Acts as a central hub for integrating different data sources and systems, facilitating efficient data pipelines.
 
-**Why Kafka for Real-Time Streaming?**
+After getting more exposure to different technology like RabbitMQ, I can't help but to as a question
+
+> **Why Kafka for Real-Time Streaming?**
+
+
 In the landscape of messaging systems, Kafka offers distinct advantages over traditional message queues (MQ). Unlike traditional MQ systems that focus on point-to-point communication, Kafka excels in scenarios demanding:
 
 * **Publish-Subscribe Model:** Allows multiple consumers to subscribe to the same data stream concurrently, supporting diverse use cases from analytics to monitoring.
