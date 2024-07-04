@@ -7,7 +7,8 @@ date: 2024-07-02T16:00:00.000Z
 
 Apache Kafka has been a popular mention in my journey as a developer, particularly in the realm of real-time data streaming and distributed systems. Having recently completed a project using Kafka on an AWS EC2 instance, I find myself reflecting on its core concepts and practical applications.
 
-**Refreshing its Core Concepts:**
+### Refreshing its Core Concepts
+
 Apache Kafka operates on a distributed architecture consisting primarily of brokers, producers, consumers, and ZooKeeper.
 
 1. **Brokers:** These are the Kafka servers responsible for storing and managing the streams of records.
@@ -15,18 +16,18 @@ Apache Kafka operates on a distributed architecture consisting primarily of brok
 3. **Consumers:** Applications that subscribe to and process data from Kafka topics.
 4. **ZooKeeper:** Coordinates and manages Kafka brokers to ensure reliability and scalability.
 
-**As far as I am aware..**
-Apache Kafka has some unique features
+### Its Unique Features
 
 * **Scalability:** Kafka's distributed nature allows horizontal scaling, accommodating increasing data volumes seamlessly.
 * **Fault Tolerance:** Replication across Kafka brokers ensures data durability and availability, critical for mission-critical applications.
 * **High Throughput aka "Fast":** Kafka's ability to handle millions of messages per second makes it ideal for scenarios requiring real-time data processing.
 * **Data Integration:** Acts as a central hub for integrating different data sources and systems, facilitating efficient data pipelines.
 
+### Comparison with others
+
 After getting more exposure to different technology like RabbitMQ, I can't help but to as a question
 
 > **Why Kafka for Real-Time Streaming?**
-
 
 In the landscape of messaging systems, Kafka offers distinct advantages over traditional message queues (MQ). Unlike traditional MQ systems that focus on point-to-point communication, Kafka excels in scenarios demanding:
 
@@ -34,5 +35,6 @@ In the landscape of messaging systems, Kafka offers distinct advantages over tra
 * **Event Sourcing:** Facilitates capturing and storing events as they occur, enabling applications to replay events for analysis or recovery.
 * **Microservices Architecture:** Supports asynchronous communication between microservices, enhancing decoupling and scalability.
 
-**Conclusion:**
-As I continue to delve deeper into Apache Kafka, I aim to explore its nuances further and document practical insights on my portfolio website. The journey with Kafka underscores its role not just as a tool for real-time streaming but as a cornerstone in building scalable, resilient data architectures.
+### End Note
+
+As I delve deeper into Apache Kafka, my goal is to explore further and document its pros and cons across different use cases.
